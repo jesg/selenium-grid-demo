@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="SeleniumGrid" verbose="1" parallel="tests" thread-count="4">
+  <test name="firefox">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="jesg.SeleniumGridTest"/>
+    </classes>
+  </test>
+  <test name="chrome">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="jesg.SeleniumGridTest"/>
+    </classes>
+  </test>
+  <test name="phantomjs">
+  	<parameter name="browser" value="phantomjs"/>
+    <classes>
+      <class name="jesg.SeleniumGridTest"/>
+    </classes>
+  </test>
+</suite>
